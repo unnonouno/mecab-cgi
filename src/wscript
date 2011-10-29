@@ -1,0 +1,7 @@
+def build(bld):
+    bld.program(
+        source = 'mecab-cgi.cpp',
+        target = 'mecab-cgi',
+        includes = '.',
+        use = 'PFICOMMON MECAB'
+        )
